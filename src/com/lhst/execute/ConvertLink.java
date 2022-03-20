@@ -12,7 +12,7 @@ import com.lhst.util.StringUtil;
 public class ConvertLink {
 	
 	public static final String INPUT_FILE = "links.txt";
-	public static final String OUTPUT_FILE = "result.txt";	
+	public static final String OUTPUT_FILE = "links.txt";
 	
 	public static void convertLink(String fileDir, Integer count) throws Exception{
 		InputStreamReader reader = new InputStreamReader(
@@ -69,11 +69,18 @@ public class ConvertLink {
 		
 		//Method_2
 		String rootPath =  System.getProperty("user.dir");
-		String targetFolder = "auto_caption";
+		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
+
+		String firstFolder = "backend";
+		String secondFolder =  "spring_boot";
+		String thirdFolder = "https_sample";
+		String fileName = "1.jpg";
 		
-		String targetLink = "https://github.com/yekongle/PhotoManager/raw/master/blog/images/" + targetFolder + "/1.jpg";
-		String targetFileDir = rootPath + "/blog/images/" + targetFolder + "/";
-		Integer linkNum = 19;
+		String targetLink = String.format(originLink, firstFolder, secondFolder, thirdFolder, fileName);
+		String path = rootPath + "/blog/images/%s/%s/%s/";
+		String targetFileDir = String.format(path, firstFolder, secondFolder, thirdFolder);
+
+		Integer linkNum = 18;
 		
 		convertLink(targetLink, targetFileDir, linkNum);
 		System.out.println("Convert success!");
