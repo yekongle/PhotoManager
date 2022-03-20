@@ -4,15 +4,3 @@ https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spr
 https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/4.jpg
 https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/5.jpg
 https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/6.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/7.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/8.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/9.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/10.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/11.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/12.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/13.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/14.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/15.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/16.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/17.jpg
-https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/backend/spring_boot/https_sample/18.jpg

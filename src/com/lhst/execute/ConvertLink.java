@@ -70,17 +70,23 @@ public class ConvertLink {
 		//Method_2
 		String rootPath =  System.getProperty("user.dir");
 		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
+		String originLink1 =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s/%s";
 
-		String firstFolder = "backend";
-		String secondFolder =  "spring_boot";
-		String thirdFolder = "https_sample";
+		String firstFolder = "frontend";
+		String secondFolder =  "mobile";
+		String thirdFolder = "properties_sample";
+		String fourthFolder = "properties_sample";
+
 		String fileName = "1.jpg";
 		
 		String targetLink = String.format(originLink, firstFolder, secondFolder, thirdFolder, fileName);
+//		String targetLink1 = String.format(originLink, firstFolder, secondFolder, thirdFolder, fourthFolder, fileName);
+
+
 		String path = rootPath + "/blog/images/%s/%s/%s/";
 		String targetFileDir = String.format(path, firstFolder, secondFolder, thirdFolder);
 
-		Integer linkNum = 18;
+		Integer linkNum = 5;
 		
 		convertLink(targetLink, targetFileDir, linkNum);
 		System.out.println("Convert success!");
