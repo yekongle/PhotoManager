@@ -1,19 +1,15 @@
 package com.lhst.execute;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-
 import com.lhst.util.StringUtil;
 
+import java.io.*;
 
-public class ConvertLink {
-	
+
+public class ConvertLinkLevel2 {
+
 	public static final String INPUT_FILE = "links.txt";
 	public static final String OUTPUT_FILE = "links.txt";
-	
+
 	public static void convertLink(String fileDir, Integer count) throws Exception{
 		InputStreamReader reader = new InputStreamReader(
 				  new FileInputStream(fileDir + INPUT_FILE), "utf-8");// 考虑到编码格式
@@ -25,9 +21,9 @@ public class ConvertLink {
 			line = line.replace("blob", "raw");
 			break;
 		}
-		
+
 		bufferedReader.close();
-		
+
 		while(index <= count) {
 			if (index == 1) {
 				printWriter.println(line);
@@ -40,11 +36,13 @@ public class ConvertLink {
 		 }
 		 printWriter.close();
 	}
-	
+
 	public static void convertLink(String link, String fileDir, Integer count) throws Exception{
 		PrintWriter printWriter = new PrintWriter(new File(fileDir + OUTPUT_FILE));
-			
-		Integer index = 1;
+		String originLink = link;
+		originLink = String.format("![](%s)", originLink);
+
+				Integer index = 1;
 		while(index <= count) {
 			if (index == 1) {
 				printWriter.println(link);
@@ -55,9 +53,29 @@ public class ConvertLink {
 			}
 			index++;
 		}
+
+		printWriter.println();
+		printWriter.println();
+
+		index = 1;
+		while(index <= count) {
+			if (index == 1) {
+				originLink = originLink.replaceAll(String.valueOf(index-1), String.valueOf(index));
+				printWriter.println(originLink);
+				printWriter.flush();
+			} else {
+				originLink = originLink.replaceAll(String.valueOf(index-1), String.valueOf(index));
+				https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/interesting/auto_caption/16.jpg)
+				printWriter.println(originLink);
+			}
+			index++;
+		}
+
 		printWriter.close();
 	}
-	
+
+
+
 
 	public static void main(String[] args) throws Exception{
 		
@@ -69,24 +87,19 @@ public class ConvertLink {
 		
 		//Method_2
 		String rootPath =  System.getProperty("user.dir");
-		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
-		String originLink1 =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s/%s";
+		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s";
 
-		String firstFolder = "frontend";
-		String secondFolder =  "mobile";
-		String thirdFolder = "properties_sample";
-		String fourthFolder = "properties_sample";
+		String firstFolder = "interesting";
+		String secondFolder =  "hexo_online";
 
 		String fileName = "1.jpg";
 		
-		String targetLink = String.format(originLink, firstFolder, secondFolder, thirdFolder, fileName);
-//		String targetLink1 = String.format(originLink, firstFolder, secondFolder, thirdFolder, fourthFolder, fileName);
+		String targetLink = String.format(originLink, firstFolder, secondFolder, fileName);
 
+		String path = rootPath + "/blog/images/%s/%s/";
+		String targetFileDir = String.format(path, firstFolder, secondFolder);
 
-		String path = rootPath + "/blog/images/%s/%s/%s/";
-		String targetFileDir = String.format(path, firstFolder, secondFolder, thirdFolder);
-
-		Integer linkNum = 5;
+		Integer linkNum = 1;
 		
 		convertLink(targetLink, targetFileDir, linkNum);
 		System.out.println("Convert success!");
