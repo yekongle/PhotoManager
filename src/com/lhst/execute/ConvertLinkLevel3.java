@@ -94,9 +94,9 @@ public class ConvertLinkLevel3 {
 		String rootPath =  System.getProperty("user.dir");
 		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
 
-		String firstFolder = "backend";
-		String secondFolder =  "spring_boot";
-		String thirdFolder = "properties_sample";
+		String firstFolder = "devops";
+		String secondFolder =  "practise";
+		String thirdFolder = "jenkins_gitlab_maven_sb";
 
 		String fileName = "1.jpg";
 		
