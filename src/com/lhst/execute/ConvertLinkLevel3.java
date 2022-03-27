@@ -94,11 +94,11 @@ public class ConvertLinkLevel3 {
 		String rootPath =  System.getProperty("user.dir");
 		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
 
-		String firstFolder = "backend";
-		String secondFolder =  "spring_boot";
-		String thirdFolder = "rest_template";
+		String firstFolder = "devops";
+		String secondFolder =  "k8s";
+		String thirdFolder = "centos7_installation";
 
-		String fileName = "1.png";
+		String fileName = "1.jpg";
 		
 		String targetLink = String.format(originLink, firstFolder, secondFolder, thirdFolder, fileName);
 
