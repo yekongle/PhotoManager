@@ -95,10 +95,10 @@ public class ConvertLinkLevel3 {
 		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
 
 		String firstFolder = "devops";
-		String secondFolder =  "k8s";
-		String thirdFolder = "centos7_installation";
+		String secondFolder =  "jenkins";
+		String thirdFolder = "pipeline_desc";
 
-		String fileName = "1.jpg";
+		String fileName = "1.png";
 		
 		String targetLink = String.format(originLink, firstFolder, secondFolder, thirdFolder, fileName);
 
