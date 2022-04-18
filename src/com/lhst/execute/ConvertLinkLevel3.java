@@ -95,8 +95,8 @@ public class ConvertLinkLevel3 {
 		String originLink =  "https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/%s/%s/%s/%s";
 
 		String firstFolder = "devops";
-		String secondFolder =  "jenkins";
-		String thirdFolder = "pipeline_desc";
+		String secondFolder =  "practise";
+		String thirdFolder = "jenkins_cicd_test";
 
 		String fileName = "1.png";
 		

@@ -1,0 +1,4 @@
+https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/devops/practise/jenkins_cicd_test/1.png
+
+
+![](https://cdn.jsdelivr.net/gh/yekongle/PhotoManager@master/blog/images/devops/practise/jenkins_cicd_test/1.png)
